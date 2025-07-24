@@ -20,16 +20,12 @@ def generate_launch_description():
         output='screen'
     )
 
-    # auto_drive 실행파일 절대 경로 계산
     auto_drive_path = "/home/xytron/osy_250720/2025-SEAME/auto_drive"
+
     auto_drive_process = ExecuteProcess(
         cmd=[auto_drive_path, "d"],
-        output='screen',
-        additional_env={
-            'LD_LIBRARY_PATH': '/home/xytron/osy_250720/2025-SEAME:' + os.environ.get('LD_LIBRARY_PATH', '')
-        }
+        output='screen'
     )
-
 
     return LaunchDescription([
         motor_include,
