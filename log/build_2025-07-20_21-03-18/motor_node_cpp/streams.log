@@ -1,0 +1,63 @@
+[0.027s] Invoking command in '/home/xytron/osy_250720/build/motor_node_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake /home/xytron/osy_250720/motor_ros/src/motor_node_cpp -DCMAKE_INSTALL_PREFIX=/home/xytron/osy_250720/install/motor_node_cpp
+[0.084s] -- The C compiler identification is GNU 11.4.0
+[0.144s] -- The CXX compiler identification is GNU 11.4.0
+[0.150s] -- Detecting C compiler ABI info
+[0.213s] -- Detecting C compiler ABI info - done
+[0.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.221s] -- Detecting C compile features
+[0.221s] -- Detecting C compile features - done
+[0.224s] -- Detecting CXX compiler ABI info
+[0.297s] -- Detecting CXX compiler ABI info - done
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.303s] -- Detecting CXX compile features
+[0.304s] -- Detecting CXX compile features - done
+[0.312s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.499s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.651s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.744s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.756s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.770s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.788s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.826s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.907s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.915s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.029s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.058s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.103s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.125s] -- Looking for pthread.h
+[1.192s] -- Looking for pthread.h - found
+[1.193s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.274s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.274s] -- Found Threads: TRUE  
+[1.345s] -- Found xycar_msgs: 0.0.0 (/home/xytron/xycar_ws/install/xycar_msgs/share/xycar_msgs/cmake)
+[1.459s] -- Configuring done
+[1.468s] -- Generating done
+[1.471s] -- Build files have been written to: /home/xytron/osy_250720/build/motor_node_cpp
+[1.480s] Invoked command in '/home/xytron/osy_250720/build/motor_node_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake /home/xytron/osy_250720/motor_ros/src/motor_node_cpp -DCMAKE_INSTALL_PREFIX=/home/xytron/osy_250720/install/motor_node_cpp
+[1.482s] Invoking command in '/home/xytron/osy_250720/build/motor_node_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --build /home/xytron/osy_250720/build/motor_node_cpp -- -j16 -l16
+[1.536s] [ 50%] [32mBuilding CXX object CMakeFiles/motor_node.dir/src/motor_node.cpp.o[0m
+[5.217s] [100%] [32m[1mLinking CXX executable motor_node[0m
+[5.388s] [100%] Built target motor_node
+[5.399s] Invoked command in '/home/xytron/osy_250720/build/motor_node_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --build /home/xytron/osy_250720/build/motor_node_cpp -- -j16 -l16
+[5.409s] Invoking command in '/home/xytron/osy_250720/build/motor_node_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --install /home/xytron/osy_250720/build/motor_node_cpp
+[5.415s] -- Install configuration: ""
+[5.415s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/lib/motor_node_cpp/motor_node
+[5.417s] -- Set runtime path of "/home/xytron/osy_250720/install/motor_node_cpp/lib/motor_node_cpp/motor_node" to ""
+[5.417s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp//launch
+[5.417s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp//launch/motor_node.launch.py
+[5.417s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/ament_index/resource_index/package_run_dependencies/motor_node_cpp
+[5.417s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/ament_index/resource_index/parent_prefix_path/motor_node_cpp
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/environment/ament_prefix_path.sh
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/environment/ament_prefix_path.dsv
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/environment/path.sh
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/environment/path.dsv
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/local_setup.bash
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/local_setup.sh
+[5.418s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/local_setup.zsh
+[5.419s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/local_setup.dsv
+[5.419s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.dsv
+[5.419s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/ament_index/resource_index/packages/motor_node_cpp
+[5.419s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/cmake/motor_node_cppConfig.cmake
+[5.419s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/cmake/motor_node_cppConfig-version.cmake
+[5.422s] -- Installing: /home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.xml
+[5.423s] Invoked command in '/home/xytron/osy_250720/build/motor_node_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --install /home/xytron/osy_250720/build/motor_node_cpp

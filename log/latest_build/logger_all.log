@@ -1,0 +1,222 @@
+[0.128s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.128s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x78b2dbdb5f00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78b2dbd3f700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78b2dbd3f700>>, mixin_verb=('build',))
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.334s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/xytron/osy_250720'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'ros'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['cmake', 'python']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'cmake'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'python'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extensions ['python_setup_py']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'ros'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['cmake', 'python']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'cmake'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'python'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extensions ['python_setup_py']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/build) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/include) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(2025-SEAME/src) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'ros'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['cmake', 'python']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'cmake'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'python'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extensions ['python_setup_py']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros) by extension 'python_setup_py'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/build) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/build) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/build) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/install) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/install) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/install) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/log) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/log) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/log) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(motor_ros/src/motor_node_cpp) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'motor_ros/src/motor_node_cpp' with type 'ros.ament_cmake' and name 'motor_node_cpp'
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.368s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/xytron/osy_250720/install
+[0.369s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/xytron/osy_250720/motor_ros/install
+[0.370s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 34 installed packages in /home/xytron/xycar_ws/install
+[0.371s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/humble
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_target' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'motor_node_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.405s] DEBUG:colcon.colcon_core.verb:Building package 'motor_node_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xytron/osy_250720/build/motor_node_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xytron/osy_250720/install/motor_node_cpp', 'merge_install': False, 'path': '/home/xytron/osy_250720/motor_ros/src/motor_node_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.405s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.406s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xytron/osy_250720/motor_ros/src/motor_node_cpp' with build type 'ament_cmake'
+[0.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xytron/osy_250720/motor_ros/src/motor_node_cpp'
+[0.408s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.408s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.408s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xytron/osy_250720/build/motor_node_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --build /home/xytron/osy_250720/build/motor_node_cpp -- -j16 -l16
+[0.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xytron/osy_250720/build/motor_node_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --build /home/xytron/osy_250720/build/motor_node_cpp -- -j16 -l16
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xytron/osy_250720/build/motor_node_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --install /home/xytron/osy_250720/build/motor_node_cpp
+[0.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_node_cpp)
+[0.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xytron/osy_250720/build/motor_node_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/xytron/xycar_ws/install/yolo_ros:/home/xytron/xycar_ws/install/xycar_sim_parking:/home/xytron/xycar_ws/install/xycar_sim_driving:/home/xytron/xycar_ws/install/orda:/home/xytron/xycar_ws/install/my_ultra:/home/xytron/xycar_ws/install/my_lidar:/home/xytron/xycar_ws/install/my_cam:/home/xytron/xycar_ws/install/manual_drive:/home/xytron/xycar_ws/install/xycar_motor:/home/xytron/xycar_ws/install/xycar_imu:/home/xytron/xycar_ws/install/xycar_cam:/home/xytron/xycar_ws/install/my_motor:/home/xytron/xycar_ws/install/my_imu:/home/xytron/xycar_ws/install/my_hough:/home/xytron/xycar_ws/install/app_ultra_viewer:/home/xytron/xycar_ws/install/app_turtlesim:/home/xytron/xycar_ws/install/app_sensor_drive:/home/xytron/xycar_ws/install/app_rule_drive_sim:/home/xytron/xycar_ws/install/app_pubsub:/home/xytron/xycar_ws/install/app_path_planning:/home/xytron/xycar_ws/install/app_hough_drive:/home/xytron/xycar_ws/install/app_cam_exposure:/home/xytron/xycar_ws/install/app_8_drive:/opt/ros/humble /usr/bin/cmake --install /home/xytron/osy_250720/build/motor_node_cpp
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp' for CMake module files
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp' for CMake config files
+[0.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_node_cpp', 'cmake_prefix_path')
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.ps1'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.dsv'
+[0.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.sh'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/bin'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib/pkgconfig/motor_node_cpp.pc'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib/python3.10/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.ps1'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.bash'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.zsh'
+[0.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xytron/osy_250720/install/motor_node_cpp/share/colcon-core/packages/motor_node_cpp)
+[0.768s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_node_cpp)
+[0.768s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp' for CMake module files
+[0.768s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp' for CMake config files
+[0.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_node_cpp', 'cmake_prefix_path')
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.ps1'
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.dsv'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/hook/cmake_prefix_path.sh'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/bin'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib/pkgconfig/motor_node_cpp.pc'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/lib/python3.10/site-packages'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/xytron/osy_250720/install/motor_node_cpp/bin'
+[0.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.ps1'
+[0.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.sh'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.bash'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/xytron/osy_250720/install/motor_node_cpp/share/motor_node_cpp/package.zsh'
+[0.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xytron/osy_250720/install/motor_node_cpp/share/colcon-core/packages/motor_node_cpp)
+[0.773s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.773s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.774s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.774s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.779s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.779s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.779s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.792s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.792s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xytron/osy_250720/install/local_setup.ps1'
+[0.794s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xytron/osy_250720/install/_local_setup_util_ps1.py'
+[0.795s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xytron/osy_250720/install/setup.ps1'
+[0.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xytron/osy_250720/install/local_setup.sh'
+[0.800s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xytron/osy_250720/install/_local_setup_util_sh.py'
+[0.800s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xytron/osy_250720/install/setup.sh'
+[0.804s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xytron/osy_250720/install/local_setup.bash'
+[0.804s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xytron/osy_250720/install/setup.bash'
+[0.807s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xytron/osy_250720/install/local_setup.zsh'
+[0.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xytron/osy_250720/install/setup.zsh'
