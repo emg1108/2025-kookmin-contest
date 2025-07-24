@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/xytron/osy_250720/motor_ros/src/motor_node_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xytron/osy_250720/build/motor_node_cpp
+CMAKE_BINARY_DIR = /home/xytron/osy_250720/motor_ros/build/motor_node_cpp
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles /home/xytron/osy_250720/build/motor_node_cpp//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles /home/xytron/osy_250720/motor_ros/build/motor_node_cpp//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

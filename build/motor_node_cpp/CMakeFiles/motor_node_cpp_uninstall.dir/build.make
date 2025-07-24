@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/xytron/osy_250720/motor_ros/src/motor_node_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xytron/osy_250720/build/motor_node_cpp
+CMAKE_BINARY_DIR = /home/xytron/osy_250720/motor_ros/build/motor_node_cpp
 
 # Utility rule file for motor_node_cpp_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/motor_node_cpp_uninstall.dir/compiler_depend.make
 include CMakeFiles/motor_node_cpp_uninstall.dir/progress.make
 
 CMakeFiles/motor_node_cpp_uninstall:
-	/usr/bin/cmake -P /home/xytron/osy_250720/build/motor_node_cpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 motor_node_cpp_uninstall: CMakeFiles/motor_node_cpp_uninstall
 motor_node_cpp_uninstall: CMakeFiles/motor_node_cpp_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/motor_node_cpp_uninstall.dir/clean:
 .PHONY : CMakeFiles/motor_node_cpp_uninstall.dir/clean
 
 CMakeFiles/motor_node_cpp_uninstall.dir/depend:
-	cd /home/xytron/osy_250720/build/motor_node_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles/motor_node_cpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xytron/osy_250720/motor_ros/build/motor_node_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles/motor_node_cpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor_node_cpp_uninstall.dir/depend
 

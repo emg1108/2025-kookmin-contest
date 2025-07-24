@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/xytron/osy_250720/motor_ros/src/motor_node_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xytron/osy_250720/build/motor_node_cpp
+CMAKE_BINARY_DIR = /home/xytron/osy_250720/motor_ros/build/motor_node_cpp
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/motor_node.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/motor_node_cpp_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/motor_node_cpp_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_node_cpp_uninstall.dir/build.make CMakeFiles/motor_node_cpp_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_node_cpp_uninstall.dir/build.make CMakeFiles/motor_node_cpp_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles --progress-num= "Built target motor_node_cpp_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles --progress-num= "Built target motor_node_cpp_uninstall"
 .PHONY : CMakeFiles/motor_node_cpp_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_node_cpp_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_node_cpp_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 .PHONY : CMakeFiles/motor_node_cpp_uninstall.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ CMakeFiles/motor_node_cpp_uninstall.dir/clean:
 CMakeFiles/motor_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_node.dir/build.make CMakeFiles/motor_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor_node.dir/build.make CMakeFiles/motor_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles --progress-num=1,2 "Built target motor_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles --progress-num=1,2 "Built target motor_node"
 .PHONY : CMakeFiles/motor_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/motor_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motor_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles 0
 .PHONY : CMakeFiles/motor_node.dir/rule
 
 # Convenience name for target.

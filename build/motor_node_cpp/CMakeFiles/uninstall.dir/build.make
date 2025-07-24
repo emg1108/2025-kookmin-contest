@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/xytron/osy_250720/motor_ros/src/motor_node_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xytron/osy_250720/build/motor_node_cpp
+CMAKE_BINARY_DIR = /home/xytron/osy_250720/motor_ros/build/motor_node_cpp
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/xytron/osy_250720/build/motor_node_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp /home/xytron/osy_250720/build/motor_node_cpp/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xytron/osy_250720/motor_ros/build/motor_node_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/src/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp /home/xytron/osy_250720/motor_ros/build/motor_node_cpp/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
