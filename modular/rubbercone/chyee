@@ -1,0 +1,212 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <chrono>
+#include <limits>
+#include <thread>
+
+//==================== 공용 상수·유틸 ====================
+constexpr double PI = 3.14159265358979323846;
+
+// 2-D 점 구조체
+struct Pt { double x{0}, y{0}; };
+
+//==================== 신고등(초록) 감지 ====================
+bool isGreenLight(const cv::Mat& bgr)
+{
+    if(bgr.empty()) return false;
+
+    /* ① 상단 1/4 영역만 검사 */
+    cv::Rect roi(0, 0, bgr.cols, bgr.rows / 4);
+    cv::Mat hsv, mask;
+    cv::cvtColor(bgr(roi), hsv, cv::COLOR_BGR2HSV);
+
+    /* ② 녹색 HSV 범위 (H≈60 ± 15°, S,V ≥ 120) */
+    cv::Scalar lower(45, 120, 120);
+    cv::Scalar upper(75, 255, 255);
+    cv::inRange(hsv, lower, upper, mask);
+
+    /* ③ 잡음 제거 & 픽셀 카운트 */
+    cv::morphologyEx(mask, mask, cv::MORPH_OPEN,
+                     cv::getStructuringElement(cv::MORPH_RECT,{5,5}));
+    int greenPx = cv::countNonZero(mask);
+
+    return greenPx > 2000;           // 경험적 임계값
+}
+
+//==================== 라바콘 검출 =======================
+class ConeDetector {
+public:
+    // ranges(㎝) 입력 → true: 라바콘 모드 유지, false: 종료 조건 만족
+    bool update(const std::vector<float>& ranges);
+    double getSteerDeg() const { return steer_deg_; }
+
+private:
+    // 내부 상태
+    Pt     prev_mid_{};
+    double steer_deg_{0};          // 조향각(도)
+    int    cone_cnt_{0};
+    bool   left_cone_exist_{false};
+
+    // 하위 루틴
+    static std::vector<Pt> filterClose(const std::vector<Pt>& pts, double min_d=1.0);
+    static int fanCount(const std::vector<Pt>& pts, double radius=4.5);
+};
+
+/*---------- 구현 ----------*/
+bool ConeDetector::update(const std::vector<float>& ranges)
+{
+    //---------------- polar → cartesian ----------------
+    std::vector<Pt> pts;
+    const size_t N = ranges.size();
+    for(size_t i=0;i<N;++i){
+        float r = ranges[i];
+        if(r<=1.f || r>7.f) continue;                 // 1~7 m 범위만 사용
+        double ang = (static_cast<double>(i)/N)*2.*PI + PI/2.;
+        pts.push_back({ r*std::cos(ang), r*std::sin(ang) });
+    }
+
+    auto clusters       = filterClose(pts,1.0);       // 군집 병합
+    cone_cnt_           = fanCount(clusters);         // 전방 90° 내 군집 수
+    left_cone_exist_    = false;
+    std::vector<Pt> fwd;
+    for(auto&p:clusters) if(p.y>1.5) fwd.push_back(p);// 전방만 추출
+
+    Pt lm{}, rm{};
+    double ly=1e9, ry=1e9;
+    for(auto&p:fwd){
+        if(p.x<0 && p.y<ly){ ly=p.y; lm=p; left_cone_exist_=true; }
+        if(p.x>0 && p.y<ry){ ry=p.y; rm=p; }
+    }
+
+    //---------------- 조향각 계산 ----------------
+    Pt mid{ (lm.x+rm.x)/2., 0 };
+    if(!left_cone_exist_ || ry==1e9 || ly==1e9) mid = prev_mid_;
+    else                   prev_mid_ = mid;
+
+    steer_deg_ = mid.x * 50.0;                        // 제한 없이 그대로 사용
+
+    //---------------- 모드 유지/종료 ----------------
+    bool keep_cone_mode = left_cone_exist_ || (cone_cnt_>=3);
+    return keep_cone_mode;
+}
+
+std::vector<Pt> ConeDetector::filterClose(const std::vector<Pt>& v,double d)
+{
+    std::vector<Pt> out;
+    std::vector<char> used(v.size(),0);
+    double d2=d*d;
+    for(size_t i=0;i<v.size();++i){
+        if(used[i]) continue;
+        out.push_back(v[i]);
+        for(size_t j=i;j<v.size();++j){
+            double dx=v[i].x-v[j].x, dy=v[i].y-v[j].y;
+            if(dx*dx+dy*dy<d2) used[j]=1;
+        }
+    }
+    return out;
+}
+
+int ConeDetector::fanCount(const std::vector<Pt>& pts,double rad)
+{
+    int c=0;
+    for(auto&p:pts){
+        double ang=std::atan2(p.y,p.x), d=std::hypot(p.x,p.y);
+        if(ang>=PI/4. && ang<=3.*PI/4. && d<=rad) ++c;
+    }
+    return c;
+}
+
+//==================== 주행 FSM ==========================
+enum class Mode { WAIT=-1, CONE=1, STRAIGHT=2 };
+
+struct State {
+    Mode    mode{Mode::WAIT};
+    double  speed{0};
+    double  steer{0};
+    std::chrono::steady_clock::time_point straightStart{};
+};
+
+int main()
+{
+    /* 카메라 & 라이다 초기화 */
+    cv::VideoCapture cam(0);      // 실제 USB-cam
+    if(!cam.isOpened()){
+        std::cerr << "카메라를 열 수 없습니다!" << std::endl;
+        return -1;
+    }
+
+    std::vector<float> lidar(360,10.f);
+    ConeDetector CD;
+    State S;
+
+    // 테스트용 라이다 데이터 생성 함수
+    auto fetch=[&](std::vector<float>& r){        
+        static int cnt=0; cnt++;
+        r.assign(360,10.f);
+        if(cnt<100){                              // 라바콘 구간
+            r[45]=3.f; r[46]=3.05f;               // 오른쪽
+            if(cnt<80){                           // 왼쪽 라바콘은 80번째 루프까지
+                r[135]=3.f; r[136]=3.05f;
+            }
+        }
+    };
+
+    std::cout << "[START] Kukmin-2025 통합 주행 시스템" << std::endl;
+    
+    while(true){
+        // ── 센서 입력 ────────────────────────────
+        cv::Mat frame;  
+        cam.read(frame);
+        fetch(lidar);  // TODO: 실제 라이다 콜백으로 교체
+
+        // ── 상태기계 ──────────────────────────────
+        switch(S.mode){
+        case Mode::WAIT:
+            S.speed = 0; S.steer = 0;
+            if(isGreenLight(frame)){                // ★ 초록불 감지
+                S.mode = Mode::CONE;
+                std::cout << "\n[EVENT] GREEN LIGHT → CONE MODE" << std::endl;
+            }
+            break;
+
+        case Mode::CONE:{
+            bool keep = CD.update(lidar);
+            S.steer = CD.getSteerDeg();
+            S.speed = 100;                         // 고속 고정
+            if(!keep){                             // 왼쪽 cone X and <3 cluster
+                S.mode = Mode::STRAIGHT;
+                S.straightStart = std::chrono::steady_clock::now();
+                std::cout << "\n[EVENT] CONE END → STRAIGHT 1s" << std::endl;
+            }
+        } break;
+
+        case Mode::STRAIGHT:{
+            S.speed = 100;  S.steer = 0;
+            auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>
+                           (std::chrono::steady_clock::now() - S.straightStart).count();
+            if(elapsed >= 1000){
+                std::cout << "\n[EVENT] STRAIGHT DONE – handover to lane_detector node" << std::endl;
+                return 0;      // 본 노드 종료, lane_detector 가 이어받음
+            }
+        } break;
+        }
+
+        // ── 모터 명령 출력 ──────────────────
+        std::cout << "SPD " << static_cast<int>(S.speed) 
+                  << " | STR " << static_cast<int>(S.steer) 
+                  << "\r" << std::flush;
+        
+        // 디버깅용 영상 표시 (선택사항)
+        if(!frame.empty()){
+            cv::imshow("Camera Feed", frame);
+            if(cv::waitKey(1) == 27) break; // ESC키로 종료
+        }
+        
+        std::this_thread::sleep_for(std::chrono::milliseconds(80));
+    }
+    
+    cv::destroyAllWindows();
+    return 0;
+}
